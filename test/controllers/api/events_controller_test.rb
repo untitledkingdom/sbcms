@@ -1,17 +1,15 @@
 # == Schema Information
 #
-# Table name: beacons
+# Table name: events
 #
-#  id                :integer          not null, primary key
-#  name              :string           default(""), not null
-#  model             :string           default(""), not null
-#  uuid              :string           default(""), not null
-#  major             :integer          default(1), not null
-#  minor             :integer          default(1), not null
-#  created_at        :datetime
-#  updated_at        :datetime
-#  unique_sync_id    :string           default("")
-#  unique_identifier :string           not null
+#  id         :integer          not null, primary key
+#  type       :string           default("EventText"), not null
+#  kind       :integer          default("enter"), not null
+#  active     :boolean          default(FALSE), not null
+#  beacon_id  :integer
+#  payload    :text
+#  created_at :datetime
+#  updated_at :datetime
 #
 
 require 'test_helper'
