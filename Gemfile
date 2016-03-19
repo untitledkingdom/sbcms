@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
 
-gem 'rails',            '5.0.0.beta1'
+gem 'rails',            '5.0.0.beta3'
 gem 'haml-rails'
 gem 'rails-settings-cached'
 gem 'bcrypt',           '~> 3.1.7'
