@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/Partyista/activerecord-session_store.git
+  revision: b5ac26b06defd197fbb330aed1ae054c866380cd
+  specs:
+    activerecord-session_store (0.1.2)
+      actionpack (>= 4.0, < 5.1)
+      activerecord (>= 4.0, < 5.1)
+      rack (>= 1.5.2, < 3)
+      railties (>= 4.0, < 5.1)
+
+GIT
   remote: git://github.com/amatsuda/kaminari.git
   revision: 45ee71b74c7a21333e2b05ae8672a0e8c0625e38
   specs:
@@ -22,16 +32,6 @@ GIT
     annotate (2.7.0)
       activerecord (>= 3.2, < 6.0)
       rake (~> 10.4)
-
-GIT
-  remote: git://github.com/gregmolnar/activerecord-session_store.git
-  revision: 7c02a5c484b31c36c06619ba7dd3cbfb0558b6bb
-  branch: rails5
-  specs:
-    activerecord-session_store (0.1.2)
-      actionpack (>= 4.0.0, < 5)
-      activerecord (>= 4.0.0, < 5)
-      railties (>= 4.0.0, < 5)
 
 GEM
   remote: https://rubygems.org/
@@ -215,7 +215,7 @@ GEM
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (2.0.2)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)

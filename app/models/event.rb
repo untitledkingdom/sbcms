@@ -33,6 +33,10 @@ class Event < ActiveRecord::Base
     self.class.name.sub(/^Event/, '').downcase
   end
 
+  def serialized
+    ActiveModel::SerializableResource.new(self, include: EventSerializer.includes).serializable_hash
+  end
+
   class << self
     def available_types
       unless Settings.service_enabled?(:imgur)

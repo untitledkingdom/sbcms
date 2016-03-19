@@ -56,7 +56,7 @@ class BeaconsControllerTest < ActionController::TestCase
   end
 
   test "should update beacon" do
-    patch :update, { id: @beacon }.merge(@params)
+    patch :update, params: { id: @beacon }.merge(@params)
     assert_redirected_to beacon_path(@beacon)
   end
 end

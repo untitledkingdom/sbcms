@@ -9,7 +9,7 @@ gem 'active_model_serializers', '0.10.0.rc3'
 gem 'puma'
 
 # contains rails5 fixes not yet merged to rails repository!
-gem 'activerecord-session_store', github: 'gregmolnar/activerecord-session_store', branch: 'rails5'
+gem 'activerecord-session_store', github: 'Partyista/activerecord-session_store'
 
 gem 'uglifier',         '>= 1.3.0'
 gem 'coffee-rails'
