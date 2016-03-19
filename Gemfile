@@ -44,6 +44,7 @@ group :development do
 end
 
 group :test do
-  gem 'minitest-rails', github: 'blowmage/minitest-rails', branch: 'rails5'
-  gem 'simplecov',      require: false
+  gem 'minitest-rails',   github: 'blowmage/minitest-rails', branch: 'rails5'
+  gem 'json_expressions', require: false
+  gem 'simplecov',        require: false
 end

@@ -6,6 +6,7 @@ SimpleCov.start
 require File.expand_path("../../config/environment", __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
+require 'json_expressions/minitest'
 
 # Uncomment for awesome colorful output
 # require 'minitest/pride'

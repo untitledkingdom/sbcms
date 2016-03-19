@@ -129,6 +129,7 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.3)
+    json_expressions (0.8.3)
     libv8 (3.16.14.13)
     listen (3.0.5)
       rb-fsevent (>= 0.9.3)
@@ -243,6 +244,7 @@ DEPENDENCIES
   httparty
   jquery-rails
   jquery-turbolinks
+  json_expressions
   kaminari!
   listen (~> 3.0.5)
   minitest-rails!
