@@ -1,4 +1,5 @@
 module ApplicationHelper
+  # :nocov:
   def render_notices
     { error: 'alert-danger', alert: 'alert-warning', notice: 'alert-info' }.flat_map do |type, class_name|
       if flash[type].respond_to?(:each)
@@ -10,4 +11,5 @@ module ApplicationHelper
       end
     end.join.html_safe
   end
+  # :nocov:
 end

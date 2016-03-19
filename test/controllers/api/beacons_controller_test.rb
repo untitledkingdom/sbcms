@@ -48,5 +48,15 @@ module Api
 
       assert_response :success
     end
+
+    test "returns error json on ActiveRecord not found error" do
+      get :show, params: { unique_identifier: 'xxx' }
+
+      assert_json_match(
+          {
+              error: 'ActiveRecord::RecordNotFound'
+          }.ignore_extra_keys!, @response.body
+      )
+    end
   end
 end
