@@ -40,7 +40,7 @@ end
 group :development do
   gem 'spring'
   gem 'listen',         '~> 3.0.5'
-  gem 'annotate',       github: 'ctran/annotate_models', branch: 'develop'
+  gem 'annotate',       github: 'ctran/annotate_models'
 end
 
 group :test do

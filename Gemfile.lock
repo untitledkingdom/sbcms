@@ -17,10 +17,9 @@ GIT
 
 GIT
   remote: git://github.com/ctran/annotate_models.git
-  revision: 056fd4218cd07a89aa0a6af1ab60cfe66683f322
-  branch: develop
+  revision: 56abbaa3eb5e41a3b236f782c0bb2a49dc3d36f1
   specs:
-    annotate (2.6.10)
+    annotate (2.7.0)
       activerecord (>= 3.2, < 6.0)
       rake (~> 10.4)
 

@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20160104123619) do
     t.datetime "updated_at"
     t.string   "unique_sync_id",    default: ""
     t.string   "unique_identifier",              null: false
-    t.index ["unique_identifier"], name: "index_beacons_on_unique_identifier", unique: true
   end
+
+  add_index "beacons", ["unique_identifier"], name: "index_beacons_on_unique_identifier", unique: true
 
   create_table "events", force: :cascade do |t|
     t.string   "type",       default: "EventText", null: false
@@ -34,17 +35,19 @@ ActiveRecord::Schema.define(version: 20160104123619) do
     t.text     "payload"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["beacon_id"], name: "index_events_on_beacon_id"
   end
+
+  add_index "events", ["beacon_id"], name: "index_events_on_beacon_id"
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", null: false
     t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true
-    t.index ["updated_at"], name: "index_sessions_on_updated_at"
   end
+
+  add_index "sessions", ["session_id"], name: "index_sessions_on_session_id", unique: true
+  add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at"
 
   create_table "settings", force: :cascade do |t|
     t.string   "var",                   null: false
@@ -53,7 +56,8 @@ ActiveRecord::Schema.define(version: 20160104123619) do
     t.string   "thing_type", limit: 30
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["thing_type", "thing_id", "var"], name: "index_settings_on_thing_type_and_thing_id_and_var", unique: true
   end
+
+  add_index "settings", ["thing_type", "thing_id", "var"], name: "index_settings_on_thing_type_and_thing_id_and_var", unique: true
 
 end
