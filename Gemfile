@@ -5,7 +5,7 @@ gem 'rails',            '5.0.0.beta3'
 gem 'haml-rails'
 gem 'rails-settings-cached'
 gem 'bcrypt',           '~> 3.1.7'
-gem 'active_model_serializers', '0.10.0.rc3'
+gem 'active_model_serializers', '0.10.0.rc4'
 gem 'puma'
 
 # contains rails5 fixes not yet merged to rails repository!
